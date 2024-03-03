@@ -1,0 +1,80 @@
+<div *ngIf="agenda$ | async as agenda; else loading">
+  <table mat-table [dataSource]="agenda">
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Nome</th>
+      <td mat-cell *matCellDef="let agenda">{{ agenda.name }}</td>
+    </ng-container>
+  
+    <ng-container matColumnDef="cpf">
+      <th mat-header-cell *matHeaderCellDef>CPF</th>
+      <td mat-cell *matCellDef="let agenda">{{ agenda.cpf }}</td>
+    </ng-container>
+  
+    <ng-container matColumnDef="cep">
+      <th mat-header-cell *matHeaderCellDef>CEP</th>
+      <td mat-cell *matCellDef="let agenda">{{ agenda.cep }}</td>
+    </ng-container>
+  
+    <ng-container matColumnDef="address">
+      <th mat-header-cell *matHeaderCellDef>Endereço</th>
+      <td mat-cell *matCellDef="let agenda">{{ agenda.address }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="city">
+      <th mat-header-cell *matHeaderCellDef>Cidade</th>
+      <td mat-cell *matCellDef="let agenda">{{ agenda.city }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="state">
+      <th mat-header-cell *matHeaderCellDef>Estado</th>
+      <td mat-cell *matCellDef="let agenda">{{ agenda.state }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="country">
+      <th mat-header-cell *matHeaderCellDef>Pais</th>
+      <td mat-cell *matCellDef="let agenda">{{ agenda.country }}</td>
+    </ng-container>
+  
+    <ng-container matColumnDef="fone">
+      <th mat-header-cell *matHeaderCellDef>Telefone</th>
+      <td mat-cell *matCellDef="let agenda">{{ agenda.fone }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="email">
+      <th mat-header-cell *matHeaderCellDef>Email</th>
+      <td mat-cell *matCellDef="let agenda">{{ agenda.email }}</td>
+    </ng-container>
+  
+    <ng-container matColumnDef="actions">
+      <mat-header-cell *matHeaderCellDef>
+      </mat-header-cell>
+  
+      <mat-cell *matCellDef="let agenda">
+        <button
+        (click)="onEdit(agenda)"
+          mat-icon-button
+          color="primary"
+        >
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button
+          mat-icon-button
+          color="primary"
+          aria-label="Example icon button with a plus one icon"
+          (click)="onDelete(agenda)"
+        >
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-cell>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+</div>
+
+<ng-template #loading>
+  <mat-spinner></mat-spinner>
+</ng-template>
+

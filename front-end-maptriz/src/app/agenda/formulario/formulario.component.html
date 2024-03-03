@@ -1,0 +1,39 @@
+<form [formGroup]="form">
+  <h1>Cadastro</h1>
+  <mat-form-field appearance="fill">
+    <input matInput placeholder="Nome" formControlName="name" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <input  matInput placeholder="CPF" formControlName="cpf" mask="000.000.000-00"/>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <input matInput placeholder="CEP" formControlName="cep" mask="00000-000"/>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <input matInput placeholder="Endereço" formControlName="address" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <input matInput placeholder="Cidade" formControlName="city" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <input matInput placeholder="Estado" formControlName="state" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <input matInput placeholder="Pais" formControlName="country" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <input matInput placeholder="Email" formControlName="email" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <input
+      matInput
+      placeholder="Telefone"
+      formControlName="fone"
+      mask="(00)00000-0000"
+    />
+  </mat-form-field>
+  <div>
+    <button mat-raised-button color="primary" (click)="onSave()">Salvar</button>
+    <button mat-raised-button color="secondary" (click)="onBack()">Voltar</button>
+  </div>
+</form>
