@@ -1,33 +1,27 @@
-# Processo Seletivo Maptriz
+# Criação de Um Cadastro de pessoas
 
-## Introdução
+### Sistema de Cadastro de pessoas com os seguintes dados
 
-O processo seletivo é caracterizado por um projeto full-stack sub-divido em dois projetos - Back e Front.
+* Nome
+* CPF
+* CEP
+* Endereço
+* Cidade
+* Estado
+* País
+* Telefone
 
-Ambos projetos (e seus respectivos READMEs) estão inclusos nesse repositório. Por favor, leia as instruções de cada um atentamente.
+Tecnologias Usadas 
 
-É de suma importância que os dois projetos comuniquem-se entre si e que ambos rodem em sua máquina (ou em uma máquina virtual que possa ser apresentada).
+![image](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
 
-Os projetos contêm, também, estruturas básicas para o desenvolvimento em Angular (Front) e Spring Boot/Java (Back). No entanto, apesar dessas tecnologias serem as que melhor se encaixam com o dia-a-dia da Maptriz, sinta-se à vontade para utilizar outras tecnologias se desejar.
+![image](https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot)
 
-Dito isso, caso deseje utilizar os projetos providenciados, crie um *fork* desse repositório no GitHub para isso. No entanto, se decidir por utilizar outras tecnologias, pode criar um repositório novo em seu GitHub para seu(s) projeto(s).
+![image](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
-Em ambos os casos, evite mencionar a Maptriz em seu projeto/fork.
 
-## Executando os Desafios
+# Sobre
 
-A escolha de ferramentas para o desenvolvimento ficará a seu critério.
+* Validação de CPF e CEP invalidos no backend
 
-Não se preocupe caso não consiga concluir 100% dos dois desafios até a data final estabelecida no e-mail que lhe foi enviado. Procure concluir o máximo possível dentro do prazo estabelecido. A equipe técnica da Maptriz realizará a avaliação mesmo se os desafios estiverem incompletos.
-
-Fique à vontade para tirar quaisquer dúvidas relacionadas ao processo e os desafios através do e-mail processoseletivo@maptriz.com.br.
-
-## Avaliação
-
-Após concluir os projetos, tenha certeza de detalhar as tecnologias utilizadas em seus respectivos READMEs. Após isso, envie os links para os projetos no GitHub para o e-mail processoseletivo@maptriz.com.br.
-
-A equipe técnica da Maptriz realizará um *Code Review* de seus projetos e, eventualmente, marcará uma reunião remota para discutir a sua solução dos desafios.
-
-## Conclusão
-
-Boa sorte no desafio! A equipe Maptriz deseja muito sucesso para você!
+* Adição, Edição, Exclusão e Consulta dos dados através de Endpoints no backend.
