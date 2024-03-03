@@ -48,7 +48,11 @@ export class TableService {
   private update(record: Partial<Agenda>) {
     return this.httpClient
       .put<Agenda>(`${this.API}/${record.idContact}`, record)
-      .pipe(first());
+      .pipe(first())
+  }
+
+  email(){
+    return this.httpClient.get(this.EMAIL)
   }
 
   delete(id: string) {

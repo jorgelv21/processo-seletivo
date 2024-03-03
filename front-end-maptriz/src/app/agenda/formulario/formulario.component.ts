@@ -61,8 +61,9 @@ export class FormularioComponent implements OnInit {
           verticalPosition: 'top',
           horizontalPosition: 'center',
         });
-      }
+      },
     );
+    this.service.email().subscribe(message => console.log(message))
   }
 
   // Botão voltar
